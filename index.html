@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Azriel Ariq | Backend Developer</title>
+  <meta name="description" content="Portfolio of Muhammad Hilmi Azriel Ariq, backend developer working with Go and PHP.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Portofolio</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Backend Developer</p>
+      <h1>Muhammad Hilmi Azriel Ariq</h1>
+      <p class="lead">
+        I build backend services and APIs with <strong>Go</strong> and <strong>PHP</strong>.
+        I care about clean structure, secure authentication, and databases that stay consistent.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <!-- TODO: replace # with the link to your resume (PDF or Google Drive link) -->
+        <a class="btn" href="#" target="_blank" rel="noopener">
+          Full resume
+          <svg class="icon-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17 17 7"/>
+            <path d="M8 7h9v9"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Warehouse Inventory Management API</h3>
+          <span class="tag-label">Backend</span>
+        </div>
+        <p>
+          A backend application for warehouse inventory management, built in Go with the Gin framework and a PostgreSQL database. It uses JSON Web Token authentication and automates the tracking of inventory movements, stock levels, categories, and storage locations (shelves) in the warehouse, helping to minimize human error in inventory data.
+        </p>
+        <ul class="chips" aria-label="Tech stack">
+          <li>Go</li>
+          <li>Gin</li>
+          <li>JWT Auth</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <div class="links">
+          <!-- TODO: replace # with your repository URL -->
+          <a href="https://github.com/azrielariq/final-project-go-warehouse-inventory.git" target="_blank" rel="noopener">Source code</a>
+        </div>
+      </article>
+
+      <!-- TODO: copy this card block for your next project -->
+      <article class="card">
+        <div class="card-head">
+          <h3>Sistem Informasi Pencalegan</h3>
+          <span class="tag-label">Web application</span>
+        </div>
+        <p>
+          A web-based information system for managing vote count data in
+          legislative elections. It tracks and tabulates the votes cast at each
+          polling station (TPS) accurately, and also manages data on party
+          cadres and voters.
+        </p>
+        <ul class="features">
+          <li><strong>Role-based login:</strong> admin has full access and manages all data (CRUD); user can only input cadre and voter data.</li>
+          <li><strong>Location-linked data:</strong> every cadre and voter record is tied to a sub-district and village, so the polling station (TPS) location can be traced.</li>
+          <li><strong>Vote recap:</strong> voter data is summarized by sub-district or village, and totals are summed across the whole area.</li>
+          <li><strong>Excel export:</strong> all stored data can be exported to Excel.</li>
+        </ul>
+        <ul class="chips" aria-label="Tech stack">
+          <li>PHP</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>CodeIgniter 3</li>
+          <li>Bootstrap</li>
+          <li>MySQL</li>
+        </ul>
+        <div class="links">
+          <!-- TODO: replace # with your repository URL -->
+          <a href="#" target="_blank" rel="noopener">Source code</a>
+        </div>
+      </article>
+      
+      <article class="card">
+        <div class="card-head">
+          <h3>Sistem Informasi Pengelola Jimpitan (SIPETAN)</h3>
+          <span class="tag-label">Web application</span>
+        </div>
+        <p>
+          A web-based information system for managing <em>jimpitan</em>
+          (community contribution) records in a neighborhood. It supports three
+          user types (admin, officer, and residents) and gives the community
+          one place to record contributions, share announcements, and handle
+          complaints.
+        </p>
+        <ul class="features">
+          <li><strong>Role-based login:</strong> admin has access to all features; officer can add <em>jimpitan</em> records and submit complaints; residents can only submit complaints.</li>
+          <li><strong>Information broadcast:</strong> admins create, edit, and delete announcements that appear on the dashboards of all user types.</li>
+          <li><strong>Resident data:</strong> admins can view, add, edit, and delete resident records.</li>
+          <li><strong><em>Jimpitan</em> records:</strong> admins can view, add, edit, and delete entries, which are managed by officer accounts.</li>
+          <li><strong>Complaints:</strong> complaints from officers and residents are collected on one page, where the admin addresses and resolves them.</li>
+          <li><strong>User management:</strong> admins can view, add, edit, and delete user accounts.</li>
+        </ul>
+        <ul class="chips" aria-label="Tech stack">
+          <li>PHP</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>CodeIgniter 3</li>
+          <li>Bootstrap</li>
+          <li>MySQL</li>
+        </ul>
+        <div class="links">
+          <!-- TODO: replace # with your repository URL -->
+          <a href="https://github.com/azrielariq/sipetan.git" target="_blank" rel="noopener">Source code</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Sistem Informasi Stock Opname (SINOP) Dishub</h3>
+          <span class="tag-label">Web application</span>
+        </div>
+        <p>
+          A web-based stock opname (inventory control) system for Dishub that
+          tracks supplies across several categories. Recording incoming and
+          outgoing items automatically updates the stock count, so the
+          inventory data always reflects what is actually available.
+        </p>
+        <ul class="features">
+          <li><strong>Role-based login:</strong> admin has access to all features; guest can only record outgoing items.</li>
+          <li><strong>Admin dashboard:</strong> shows the total inventory count currently recorded in the database.</li>
+          <li><strong>Stock pages by category:</strong> office supplies (ATK), cleaning supplies, printed materials, and electrical items, each showing available stock with add, edit, and delete.</li>
+          <li><strong>Incoming items:</strong> recording new stock acquisitions automatically increases the inventory count.</li>
+          <li><strong>Outgoing items:</strong> recording item usage automatically decreases the inventory count.</li>
+          <li><strong>User management:</strong> view, add, edit, and delete user records.</li>
+        </ul>
+        <ul class="chips" aria-label="Tech stack">
+          <li>PHP Native</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>MySQL</li>
+        </ul>
+        <div class="links">
+          <!-- TODO: replace # with your repository URL -->
+          <a href="https://github.com/azrielariq/sodishub.git" target="_blank" rel="noopener">Source code</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I'm a backend developer who works with both Go and PHP.
+        I enjoy designing APIs, modeling data in relational databases, and
+        learning how to make services reliable and easy to maintain.
+      </p>
+      <p>
+        I'm looking for an opportunity to grow on a backend team and
+        contribute to real products.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <ul class="chips"><li>Go</li><li>PHP</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Dart</li><li>Kotlin</li></ul>
+        </div>
+        <div>
+          <h3>Frameworks</h3>
+          <ul class="chips"><li>Gin</li><li>CodeIgniter</li><li>Bootstrap</li><li>Flutter</li></ul>
+        </div>
+        <div>
+          <h3>Database</h3>
+          <ul class="chips"><li>MySQL</li><li>PostgreSQL</li></ul>
+        </div>
+        <div>
+          <h3>Security</h3>
+          <ul class="chips"><li>JWT Authentication</li></ul>
+        </div>
+      </div>
+      <!-- TODO: add anything else you are comfortable with (Git, Docker, Laravel, MySQL, ...) -->
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <h2>Certifications &amp; Training</h2>
+
+      <ul class="cert-list">
+        <li>
+          <div>
+            <h3>Golang Backend Development</h3>
+            <p>Sanbercode</p>
+          </div>
+          <div class="cert-meta">
+            <span>2026</span>
+            <!-- TODO: replace with your real certificate verification link -->
+            <a href="https://sanbercode.com/certificate/in/53d9c292-b0c0-47ec-b59b-36e6d7bbd11c" target="_blank" rel="noopener">View certificate</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Database Administrator</h3>
+            <p>Badan Nasional Sertifikasi Profesi (BNSP)</p>
+          </div>
+          <div class="cert-meta">
+            <span>valid until 2026</span>
+            <!-- TODO: replace with your real certificate verification link -->
+            <a href="https://drive.google.com/file/d/1-V2llBSmkM0232oRmhaC3Xpwf4z7fI61/view?usp=sharing" target="_blank" rel="noopener">View certificate</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Junior Web Programmer</h3>
+            <p>Badan Nasional Sertifikasi Profesi (BNSP)</p>
+          </div>
+          <div class="cert-meta">
+            <span>valid until 2021</span>
+            <!-- TODO: replace with your real certificate verification link -->
+            <a href="https://drive.google.com/file/d/1HGdbR7jb7kJyq2qW9ITzge4IwyBpUevN/view?usp=sharing" target="_blank" rel="noopener">View certificate</a>
+          </div>
+        </li>
+        <li>
+          <div>
+            <h3>Belajar Prinsip Pemrograman SOLID</h3>
+            <p>Dicoding Indonesia</p>
+          </div>
+          <div class="cert-meta">
+              <span>valid until 2024</span>
+              <!-- TODO: replace with your real certificate verification link -->
+              <a href="https://www.dicoding.com/certificates/KEXL3748RPG2" target="_blank" rel="noopener">View certificate</a>
+            </div>
+        </li>
+      </ul>
+
+      <details class="more">
+        <summary>More training (mobile development)</summary>
+        <ul class="cert-list">
+          <li>
+            <div>
+              <h3>Belajar Membuat Aplikasi Flutter untuk Pemula</h3>
+              <p>Dicoding Indonesia</p>
+            </div>
+            <div class="cert-meta">
+              <span>valid until 2025</span>
+              <!-- TODO: replace with your real certificate verification link -->
+              <a href="https://www.dicoding.com/certificates/72ZDERGGQPYW" target="_blank" rel="noopener">View certificate</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Belajar Fundamental Aplikasi Android</h3>
+              <p>Dicoding Indonesia</p>
+            </div>
+            <div class="cert-meta">
+              <span>valid until 2024</span>
+              <!-- TODO: replace with your real certificate verification link -->
+              <a href="https://www.dicoding.com/certificates/2VX32VJ1QPYQ" target="_blank" rel="noopener">View certificate</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Belajar Membuat Aplikasi Android untuk Pemula</h3>
+              <p>Dicoding Indonesia</p>
+            </div>
+            <div class="cert-meta">
+              <span>valid until 2024</span>
+              <!-- TODO: replace with your real certificate verification link -->
+              <a href="https://www.dicoding.com/certificates/QLZ9160N9P5D" target="_blank" rel="noopener">View certificate</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Memulai Pemrograman dengan Dart</h3>
+              <p>Dicoding Indonesia</p>
+            </div>
+            <div class="cert-meta">
+              <span>valid until 2024</span>
+              <!-- TODO: replace with your real certificate verification link -->
+              <a href="https://www.dicoding.com/certificates/98XWK59OWXM3" target="_blank" rel="noopener">View certificate</a>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>Memulai Pemrograman dengan Kotlin</h3>
+              <p>Dicoding Indonesia</p>
+            </div>
+            <div class="cert-meta">
+              <span>valid until 2024</span>
+              <!-- TODO: replace with your real certificate verification link -->
+              <a href="https://www.dicoding.com/certificates/RVZK1WL5EPD5" target="_blank" rel="noopener">View certificate</a>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Want to work together or just say hi? Reach out:</p>
+      <ul class="contact-list">
+        <!-- TODO: replace with your real email and profile links -->
+        <li><a href="mailto:you@example.com">azrielariq@gmail.com</a></li>
+        <li><a href="https://github.com/azrielariq" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/muhammad-hilmi-azriel-ariq-7a4b911a2/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Muhammad Hilmi Azriel Ariq</p>
+  </footer>
+
+</body>
+</html>
